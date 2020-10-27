@@ -1,4 +1,5 @@
-Notes on an article on various ways to memoize in React.
+# Notes on Christian Nwamba's article on various ways to memoize in React.
+https://www.codebeast.dev/react-memoize-hooks-useRef-useCallback-useMemo/
 
 ## What does memoizing do in React?
 
@@ -25,4 +26,8 @@ React's memoizing hooks are useRef, useCallback, and useMemo.
 useMemo memoizes by taking a function that needs to be memoized and an array of values that when changed, would invalidate the memoization.
 
 ## What's the difference between React.memo and React.useMemo?
+
+## What does useRef do?
+
+useRef was primarily intended to provide access to DOM elements across renders. However, you can use it to maintain any sort of state across renders. When the data that is stored in useRef changes, it won't trigger a re-render.
 

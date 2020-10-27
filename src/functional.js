@@ -2,6 +2,7 @@
 
 import React, { useCallback, useMemo, useState } from "react";
 import ReactDOM from "react-dom";
+import UseRefInput from './UseRefInput';
 
 import "./styles.css";
 
@@ -65,6 +66,8 @@ function App() {
           [increment, decrement]
         )
       }
+
+      <UseRefInput />
     </div>
   );
 }
